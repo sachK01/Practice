@@ -3,11 +3,13 @@ str = "babababbabab"
 i=0
 console.log("BEFORE : " + str)
 
-while(i < str.length){
-    if(str[i] === 'a'){
-        str.c
+arr = Array.from(str)
+
+while(i < arr.length){
+    if(arr[i] === 'a'){
+        arr[i] = 'c'
     }
     i++
 }
-
+str = arr.join('')
 console.log("AFTER : " + str)
