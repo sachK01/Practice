@@ -1,15 +1,10 @@
+'use strict';
 
-str = "babababbabab"
-i=0
-console.log("BEFORE : " + str)
+let str = new String("babababababab");
 
-arr = Array.from(str)
-
-while(i < arr.length){
-    if(arr[i] === 'a'){
-        arr[i] = 'c'
-    }
-    i++
+for(let i = 0; i < str.length;i++){
+    str = str.replace('a','c')
 }
-str = arr.join('')
-console.log("AFTER : " + str)
+
+console.log(str)
+console.log(typeof str)
