@@ -1,14 +1,18 @@
 'use strict';
 
-function stringLength(str){
-
-    if(str === "")
-        return 0
-
+// let emp = {
     
-    return stringLength(str.substring(1)) + 1
-}
+//     empId:101,
+//     empName:"Samson",
+//     empSal:10000,
+//     empProjects:["Aero", "Micro", "Bomb"]
+// }
 
-let a = stringLength("Hello")
+// //Deep Cloning in Javascript
+// let empp = JSON.parse(JSON.stringify(emp))
+// empp.empProjects[0] = "Hondo"
+// console.log(empp)
+// console.log(emp)
 
-console.log(a)
+let list = [["o", "a", "c"], ["d", "f", "g"],["w","x","z"]]
+console.log(list[0])
